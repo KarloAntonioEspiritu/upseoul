@@ -38,6 +38,13 @@ $result = $service->spreadsheets_values->append(
 	$params 
 );
 
+if($result->updates->updateRows == 1){
+	echo "Success";
+}
+else{
+	echo "Fail";
+}
+
 // $response = $service->spreadsheets_values->get($spreadsheetId, $get_range);
 // $values = $response->getValues();
 ?>
